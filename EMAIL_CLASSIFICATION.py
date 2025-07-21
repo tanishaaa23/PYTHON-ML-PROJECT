@@ -8,7 +8,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 
 # 2. Load and clean
-df = pd.read_csv('student_email_dataset.csv')
+df = pd.read_csv('balanced_email_dataset.csv')
 df.columns = df.columns.str.strip()
 df = df.dropna(subset=['Email_Text'])
 
